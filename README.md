@@ -30,4 +30,4 @@ Why call it a "newton", and not just (£2,240) "ton"?
 	The creators of the format pronounced the word as "jif" with a soft "G" /ˈdʒɪf/ as in "gin".
 
 ### Cache [(pronounced "cash")](https://en.wikipedia.org/wiki/Cache_(computing))
-I used to call this "kashé", and a friend used to call it "'kaysh"; I wonder if anyone's ever started it with an 's' sound...
+I used to call this "kashé", and a friend used to call it "'kaysh"; I wonder if anyone's ever started it with an 's' sound...or "catch"? (That actually sounds like storage!?!)
