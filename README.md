@@ -21,7 +21,7 @@ Why call it a "newton", and not just (£2,240) "ton"?
 ### trekkie [(not trekker)](https://en.wikipedia.org/wiki/Trekkie#Trekkie_vs._Trekker)
 	Gene Roddenberry responded with "No, it's 'Trekkies.' I should know — I invented the thing."
 
-### Techie [(pronounced tecky)](https://en.wikipedia.org/wiki/Computer_repair_technician)
+### Techie [(pronounced "tecky")](https://en.wikipedia.org/wiki/Computer_repair_technician)
 
 ### GIF [(pronounced "jiff")](https://en.wikipedia.org/wiki/GIF#Pronunciation_of_GIF)
 	The creators of the format pronounced the word as "jif" with a soft "G" /ˈdʒɪf/ as in "gin".
