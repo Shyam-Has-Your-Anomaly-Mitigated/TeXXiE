@@ -18,10 +18,12 @@ Why call it a "newton", and not just (£2,240) "ton"?
 
 ### TeX [(pronounced "tech"; pronounced "teck")](https://en.wikipedia.org/wiki/TeX#Pronunciation_and_spelling)
 
-### trekkie [(not trekker)](https://en.wikipedia.org/wiki/Trekkie#Trekkie_vs._Trekker)
+### Trekkie [(not trekker)](https://en.wikipedia.org/wiki/Trekkie#Trekkie_vs._Trekker)
 	Gene Roddenberry responded with "No, it's 'Trekkies.' I should know — I invented the thing."
 
 ### Techie [(pronounced "tecky")](https://en.wikipedia.org/wiki/Computer_repair_technician)
 
 ### GIF [(pronounced "jiff")](https://en.wikipedia.org/wiki/GIF#Pronunciation_of_GIF)
 	The creators of the format pronounced the word as "jif" with a soft "G" /ˈdʒɪf/ as in "gin".
+
+### Cache [(pronounced "cash")](https://en.wikipedia.org/wiki/Cache_(computing))
