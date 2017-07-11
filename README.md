@@ -7,6 +7,9 @@
 
 *Coining "-thing"s is part of contributing to society; respect the contributors, or DIY!!! ...I mean, it's not like human language has naming conventions, nor any "-thing"? And dubbing "-thing"s is disrespectful; especially foreign langauges (that's what subtitles are for).*
 
+Why call them "Fibonacci numbers", and not "Hindu numbers"?
+<br>**Fibonacci wasn't the first to [discover](https://en.wikipedia.org/wiki/Fibonacci_number#Origins) the integer sequence.**
+
 Why call it "Hindu-Arabic numerals", and not just "Hindu numerals"?
 <br>**Arab traders brought Hindu mathematics to Europeans, who only refer to it as "Arabic" because of who they first observed using it, which is [analphabetically nescient](https://en.wikipedia.org/wiki/Hindu%E2%80%93Arabic_numeral_system#Etymology).**
 
