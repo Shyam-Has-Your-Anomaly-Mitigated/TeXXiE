@@ -3,7 +3,7 @@
 ℝeal Programmers don't use word processors.
 <br>ℝeal Programmers use [TeX](https://tex.stackexchange.com/questions/7278/reasons-to-use-plain-tex).
 
-## ℝeal Programmers are [Language Prescriptionists](https://en.wikipedia.org/wiki/Linguistic_prescription)
+## ℝeal Programmers are [Language Prescriptionists](https://en.wikipedia.org/wiki/Linguistic_prescription) *(Byte your heart out Vsauce!)*
 
 *Coining "-thing"s is part of contributing to society; respect the contributors, or DIY!!! ...I mean, it's not like human language has naming conventions, nor any "-thing"? And dubbing "-thing"s is disrespectful; especially foreign langauges (that's what subtitles are for).*
 
