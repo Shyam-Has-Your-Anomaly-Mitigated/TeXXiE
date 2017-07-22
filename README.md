@@ -17,6 +17,8 @@ Why call it "Hindu-Arabic numerals", and not just "Hindu numerals"?
 Why call it a "newton", and not just (£2,240) "ton"?
 <br>**The benighted "Sir" Isaac Newton may have made significant contributions to society, but he's an intellectual kleptomaniac who attempted to [plagiarise](https://en.wikipedia.org/wiki/Leibniz%E2%80%93Newton_calculus_controversy) Leibniz' Calculi; the Gilderoy Lockhart of Mathematica.**
 
+Thomas Edison...the animal abuser...the Gilderoy Lockhart of Scientifica. (Need to fact check, and think of something witty...)
+
 ### TeX [(pronounced "tech"; pronounced "teck")](https://en.wikipedia.org/wiki/TeX#Pronunciation_and_spelling)
 [iTeX](https://youtu.be/eKaI78K_rgA?t=13m29s) ([transcript](http://tug.org/TUGboat/tb31-2/tb98knut.pdf#page=2)) will replace TeX; and when it does, ℝeal Programmers carry bells.
 
