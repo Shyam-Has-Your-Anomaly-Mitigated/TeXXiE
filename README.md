@@ -4,7 +4,7 @@
 <br>ℝeal Programmers use [TeX](https://tex.stackexchange.com/questions/7278/reasons-to-use-plain-tex).
 <br>ℝeal Programmers use [DOT](https://en.wikipedia.org/wiki/DOT_(graph_description_language))
 
-## ℝeal Programmers are [Language Prescriptionists](https://en.wikipedia.org/wiki/Linguistic_prescription) *([Byte](https://en.wikipedia.org/wiki/Hard_and_soft_G) your heart out [Vsauce](https://youtu.be/mjy5eokIm3U?t=27m36s)!)*
+## ℝeal Programmers are [Language Prescriptionists](https://en.wikipedia.org/wiki/Linguistic_prescription) *([Byte](https://en.wikipedia.org/wiki/Hard_and_soft_G) your [heart](https://en.wikipedia.org/wiki/Homonym) out [Vsauce](https://youtu.be/mjy5eokIm3U?t=27m36s)!)*
 
 *Coining "-thing"s is part of contributing to society; respect the contributors, or DIY!!! ...I mean, it's not like human language has naming conventions, nor any "-thing"? And dubbing "-thing"s is disrespectful; especially foreign langauges (that's what subtitles are for).*
 
