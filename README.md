@@ -6,7 +6,7 @@
 
 ## ℝeal Programmers are [Language Prescriptionists](https://en.wikipedia.org/wiki/Linguistic_prescription) *([Byte](https://en.wikipedia.org/wiki/Hard_and_soft_G) your [heart](https://en.wikipedia.org/wiki/Homonym) out [Vsauce](https://youtu.be/mjy5eokIm3U?t=27m36s)!)*
 
-*Coining "-thing"s is part of contributing to society; respect the contributors, or DIY!!! ...I mean, it's not like human language has naming conventions, nor any "-thing"? And dubbing "-thing"s is disrespectful; especially foreign langauges (that's what subtitles are for).*
+*Coining "-thing"s is part of contributing to society; respect the contributors, or DIY!!! ...I mean, it's not like human language has naming conventions, nor any "-thing"? And dubbing "-thing"s is disrespectful; especially foreign langauges (that's what subtitles are for). If you name the children you contribute to society, you probably don't want others to bully your child; your children will inevitably die, whereas intellectual property is immortal (would you want your child to be bullied forever?).*
 
 Why call them "Fibonacci numbers", and not "Hindu numbers"?
 <br>**Fibonacci wasn't the first to [discover](https://en.wikipedia.org/wiki/Fibonacci_number#Origins) the integer sequence.**
