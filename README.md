@@ -1,8 +1,8 @@
 # TeXXiE
 
 ℝeal Programmers don't use word processors.
-<br>ℝeal Programmers use [TeX](https://tex.stackexchange.com/questions/7278/reasons-to-use-plain-tex).
-<br>ℝeal Programmers use [DOT](https://en.wikipedia.org/wiki/DOT_(graph_description_language))
+<br>ℝeal Programmers use [TeX](https://tex.stackexchange.com/questions/7278/reasons-to-use-plain-tex) files.
+<br>ℝeal Programmers use [DOT](https://en.wikipedia.org/wiki/DOT_(graph_description_language)) files.
 
 ## ℝeal Programmers are [Language Prescriptionists](https://en.wikipedia.org/wiki/Linguistic_prescription) *([Byte](https://en.wikipedia.org/wiki/Hard_and_soft_G) your [heart](https://en.wikipedia.org/wiki/Homonym) out [Vsauce](https://youtu.be/mjy5eokIm3U?t=27m36s)!)*
 
