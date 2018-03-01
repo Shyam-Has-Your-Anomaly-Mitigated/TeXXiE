@@ -54,6 +54,7 @@ digraph "Academic Timeline" {
 	} { node [ group=p fontname=monospace style=filled fillcolor="#EE9933" ]
 		ENR102
 		ENR114
+		CPT222B [ label="CPT222" ]
 	} { node [ group=c fontname=monospace style=filled fillcolor="#EEEE33" ]
 		ENR101
 		CPT112
@@ -75,7 +76,6 @@ digraph "Academic Timeline" {
 		CPT330
 		CPT331
 	} { node [ group=u fontname=monospace style=filled ]
-		CPT222B [ label="CPT222" ]
 		CPT310B [ label="CPT310" ]
 		ENR208
 		CPT111
