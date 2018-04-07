@@ -51,6 +51,7 @@ digraph "Academic Timeline" {
 		xCPT120 [ label="CPT120" ]
 		CPT222A [ label="CPT222" ]
 		CPT310A [ label="CPT310" ]
+		CPT374_A [ label="CPT374" ]
 	} { node [ group=p fontname=monospace style=filled fillcolor="#EE9933" ]
 		ENR102
 		ENR114
@@ -77,9 +78,9 @@ digraph "Academic Timeline" {
 		CPT331
 	} { node [ group=u fontname=monospace style=filled ]
 		CPT310B [ label="CPT310" ]
+		MAT17
 		ENR208
 		CPT111
-		CPT374
 	}
 
 	// Rows
@@ -106,11 +107,11 @@ digraph "Academic Timeline" {
 	{ rank=same OUA12 CPT222A CPT310A      }
 	{ rank=same OUA13                      }
 	{ rank=same OUA14 CPT222B              }
-	{ rank=same OUA15 CPT374               }
-	{ rank=same OUA16 CPT310B              }
-	{ rank=same OUA17 ENR208               }
-	{ rank=same OUA18 CPT111               }
-	{ rank=same OUA1337 }
+	{ rank=same OUA15 CPT374_A             }
+	{ rank=same OUA16                      }
+	{ rank=same OUA17 ENR208 CPT111        }
+	{ rank=same OUA18 MAT17 CPT310B        }
+	{ rank=same OUA1337}
 
 	// Study Periodic Dependency Chain
 	{ edge [ arrowhead=ediamond ]
@@ -148,7 +149,7 @@ digraph "Academic Timeline" {
 		CPT160 -> CPT264
 		edge [ weight=1000 ]
 		CPT110 -> CPT160
-		CPT270 -> CPT374
+		CPT270 -> CPT374_A
 		CPT230 -> CPT310A
 		CPT120 -> CPT250 -> CPT264
 	} { edge [ arrowhead=normal style=tapered penwidth=6 weight=1337]
@@ -156,6 +157,7 @@ digraph "Academic Timeline" {
 		CPT222A -> CPT222B
 		xCPT110 -> CPT110
 		xCPT120 -> CPT120
+		CPT374_A -> MAT17
 	} { edge [ style=invis ]
 		Legend -> OUA0
 		OUA0 -> OUA
