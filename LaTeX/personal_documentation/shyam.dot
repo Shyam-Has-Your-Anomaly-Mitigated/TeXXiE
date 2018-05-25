@@ -37,14 +37,14 @@ digraph "Academic Timeline" {
 		OUA13 [ label="SP2 '17" ]
 		OUA14 [ label="SP3 '17" ]
 		OUA15 [ label="SP4 '17" ]
+		OUA16 [ label="SP1 '18" ]
 	} { node [
 			group=this         shape=diamond
 			fontname=monospace fontcolor="#FFFFFF"
 			style=filled       fillcolor="#000000"
 		]
-		OUA16 [ label="SP1 '18" ]
-	} { node [ group=next shape=diamond fontname=monospace style=filled ]
 		OUA17 [ label="SP2 '18" ]
+	} { node [ group=next shape=diamond fontname=monospace style=filled ]
 		OUA18 [ label="SP3 '18" ]
 	} { node [ group=f fontname=monospace style=filled fillcolor="#EE3333" ]
 		xCPT110 [ label="CPT110" ]
