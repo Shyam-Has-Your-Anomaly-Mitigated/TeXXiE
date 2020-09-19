@@ -17,7 +17,7 @@ for f in $(find -type f ! -name "$OUTPUT"); do COUNT=$((COUNT+=1)); done;
 MAX=$COUNT;
 
 # Main().
-echo "Total Algorithms Used: 15">$OUTPUT;
+echo "Total Algorithms Used: 14">$OUTPUT;
 for f in $(find -type f ! -name "$OUTPUT");do # Traverse Directory Structures Recursively
    printf "$MAX:$((COUNT--))\t$f\n";
    printf "\n$f\n">>$OUTPUT;
@@ -27,7 +27,7 @@ for f in $(find -type f ! -name "$OUTPUT");do # Traverse Directory Structures Re
    echo "      MD4: $(openssl md4 $f       | rev | cut -d ' ' -f -1 | rev)"       >>$OUTPUT;#openssl md4
    echo "      MD5: $(openssl md5 $f       | rev | cut -d ' ' -f -1 | rev)"       >>$OUTPUT;#openssl md5
    echo "RIPEMD160: $(openssl ripemd160 $f | rev | cut -d ' ' -f -1 | rev)"       >>$OUTPUT;#openssl ripemd160
-   echo "     SHA0: $(openssl sha $f       | rev | cut -d ' ' -f -1 | rev)"       >>$OUTPUT;#openssl sha
+#   echo "     SHA0: $(openssl sha $f       | rev | cut -d ' ' -f -1 | rev)"       >>$OUTPUT;#openssl sha
    echo "     SHA1: $(cut -d ' ' -f -1 <<<$(shasum -a 1 $f))"                     >>$OUTPUT;#openssl sha1
    echo "   SHA224: $(cut -d ' ' -f -1 <<<$(shasum -a 224 $f))"                   >>$OUTPUT;#openssl dgst -sha224
    echo "   SHA256: $(cut -d ' ' -f -1 <<<$(shasum -a 256 $f))"                   >>$OUTPUT;#openssl dgst -sha256

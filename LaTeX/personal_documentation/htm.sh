@@ -4,6 +4,7 @@ address="https://www.seek.com.au/job/number?and_stuff";
 title="Job Title";
 mkdir sum;
 cp shyam.pdf sum;
+cp transcript.pdf sum;
 cd sum;
 ../bash-sum.sh;
 sum=$(sed '1,3d;s/ /\&nbsp;/g' < checksum.txt);
