@@ -11,8 +11,8 @@ digraph "Academic Timeline" {
 	} { node [ group=head shape=invhouse fontname=monospace style=filled fillcolor="#FFFFFF" ]
         OUA0  [ label="2012-11-26" ]
 //		OUA101  [ label="2014-06-02" ]
-	} { node [ group=tail shape=house fontname=monospace style=filled]
-		OUA1337  [ label="2019-09-01" ]
+	} { node [ group=tail shape=house fontname=monospace ] // style=filled ]
+		OUA1337  [ label="2019-11-27" ]
 	} { node [ group=prev shape=diamond fontname=monospace ]
 // ** /
 		OUAA  [ label="SP4 '12" ]
@@ -40,14 +40,14 @@ digraph "Academic Timeline" {
 		OUA16 [ label="SP1 '18" ]
 		OUA17 [ label="SP2 '18" ]
 		OUA18 [ label="SP3 '18" ]
+		OUA19 [ label="SP4 '18" ]
+		OUA20 [ label="SP3 '19" ]
 	} { node [
 			group=this         shape=diamond
 			fontname=monospace fontcolor="#FFFFFF"
 			style=filled       fillcolor="#000000"
 		]
-		OUA19 [ label="SP4 '18" ]
 	} { node [ group=next shape=diamond fontname=monospace style=filled ]
-		OUA20 [ label="SP3 '19" ]
 	} { node [ group=f fontname=monospace style=filled fillcolor="#EE3333" ]
 		xCPT110 [ label="CPT110" ]
 		xCPT120 [ label="CPT120" ]
@@ -62,6 +62,7 @@ digraph "Academic Timeline" {
 	} { node [ group=c fontname=monospace style=filled fillcolor="#EEEE33" ]
 		ENR101
 		CPT112
+		ENR208B [ label="ENR208" ]
 	} { node [ group=d fontname=monospace style=filled fillcolor="#33EE99" ]
 		CPT110
 		CPT220
@@ -83,7 +84,6 @@ digraph "Academic Timeline" {
 		CPT111
 		MAT17
 	} { node [ group=u fontname=monospace style=filled ]
-		ENR208B [ label="ENR208" ]
 	}
 
 	// Rows
@@ -123,12 +123,8 @@ digraph "Academic Timeline" {
 		OUA0//OUA101
 		-> OUAA -> OUAB -> OUAC -> OUAD -> OUAE -> OUAF
 		-> OUA1 -> OUA2 -> OUA3 -> OUA4 -> OUA5 -> OUA6 -> OUA7 -> OUA8 -> OUA9 -> OUA10 -> OUA11 -> OUA12 -> OUA13 -> OUA14
-		-> OUA15 -> OUA16 -> OUA17 -> OUA18
+		-> OUA15 -> OUA16 -> OUA17 -> OUA18 -> OUA19 -> OUA20 -> OUA1337
 	} { edge [ arrowhead=diamond ]
-		OUA18
-		-> OUA19
-		-> OUA20
-		-> OUA1337
 	}
 	/* Edge-based Dependencies */
 	{ edge [ color="#000000" style=bold ] // Mandatory
