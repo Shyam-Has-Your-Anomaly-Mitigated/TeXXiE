@@ -1,0 +1,200 @@
+//       Temporal Academia
+digraph "Academic Timeline" {
+
+	// Configuration
+	bgcolor=white
+
+	// Nodal Groups
+	{ node [ group=head shape=rectangle fontname=monospace ]
+		OUA   [ label="B.IT @ RMIT via OUA\n                    https://www.open.edu.au/degrees/bachelor-of-information-technology-rmit-university-rmi-cpt-deg                    " ]
+		Legend
+	} { node [ group=head shape=invhouse fontname=monospace style=filled fillcolor="#FFFFFF" ]
+        OUA0  [ label="2012-11-26" ]
+//		OUA101  [ label="2014-06-02" ]
+	} { node [ group=tail shape=house fontname=monospace ] // style=filled ]
+		OUA1337  [ label="2019-11-27" ]
+	} { node [ group=prev shape=diamond fontname=monospace ]
+// ** /
+		OUAA  [ label="SP4 '12" ]
+		OUAB  [ label="SP1 '13" ]
+		OUAC  [ label="SP2 '13" ]
+		OUAD  [ label="SP3 '13" ]
+		OUAE  [ label="SP4 '13" ]
+		OUAF  [ label="SP1 '14" ]
+// **/
+		OUA1  [ label="SP2 '14" ]
+		OUA2  [ label="SP3 '14" ]
+		OUA3  [ label="SP4 '14" ]
+		OUA4  [ label="SP1 '15" ]
+		OUA5  [ label="SP2 '15" ]
+		OUA6  [ label="SP3 '15" ]
+		OUA7  [ label="SP4 '15" ]
+		OUA8  [ label="SP1 '16" ]
+		OUA9  [ label="SP2 '16" ]
+		OUA10 [ label="SP3 '16" ]
+		OUA11 [ label="SP4 '16" ]
+		OUA12 [ label="SP1 '17" ]
+		OUA13 [ label="SP2 '17" ]
+		OUA14 [ label="SP3 '17" ]
+		OUA15 [ label="SP4 '17" ]
+		OUA16 [ label="SP1 '18" ]
+		OUA17 [ label="SP2 '18" ]
+		OUA18 [ label="SP3 '18" ]
+		OUA19 [ label="SP4 '18" ]
+		OUA20 [ label="SP3 '19" ]
+	} { node [
+			group=this         shape=diamond
+			fontname=monospace fontcolor="#FFFFFF"
+			style=filled       fillcolor="#000000"
+		]
+	} { node [ group=next shape=diamond fontname=monospace style=filled ]
+	} { node [ group=f fontname=monospace style=filled fillcolor="#EE3333" ]
+		xCPT110 [ label="CPT110" ]
+		xCPT120 [ label="CPT120" ]
+		CPT222A [ label="CPT222" ]
+		CPT310A [ label="CPT310" ]
+		CPT374_A [ label="CPT374" ]
+		ENR208A [ label="ENR208" ]
+	} { node [ group=p fontname=monospace style=filled fillcolor="#EE9933" ]
+		ENR102
+		ENR114
+		CPT222B [ label="CPT222" ]
+	} { node [ group=c fontname=monospace style=filled fillcolor="#EEEE33" ]
+		ENR101
+		CPT112
+		ENR208B [ label="ENR208" ]
+	} { node [ group=d fontname=monospace style=filled fillcolor="#33EE99" ]
+		CPT110
+		CPT220
+		CPT230
+		CPT251
+		CPT264
+		CPT310B [ label="CPT310" ]
+	} { node [ group=h fontname=monospace style=filled fillcolor="#3399EE" ]
+		CPT120
+		CPT121
+		CPT140
+		CPT270
+		CPT223
+		CPT323
+		CPT160
+		CPT250
+		CPT330
+		CPT331
+		CPT111
+		MAT17
+	} { node [ group=u fontname=monospace style=filled ]
+	}
+
+	// Rows
+	{ rank=same OUA0 OUA                   }
+// ** /
+	{ rank=same OUAA  xCPT110 xCPT120      }
+	{ rank=same OUAB                       }
+	{ rank=same OUAC                       }
+	{ rank=same OUAD                       }
+	{ rank=same OUAE                       }
+	{ rank=same OUAF                       }
+// **/
+	{ rank=same OUA1  CPT110 CPT120        }
+	{ rank=same OUA2  CPT121 CPT140        }
+	{ rank=same OUA3  CPT220 CPT270        }
+	{ rank=same OUA4  CPT223 CPT323        }
+	{ rank=same OUA5  ENR101 CPT160        }
+	{ rank=same OUA6  CPT230 CPT250        }
+	{ rank=same OUA7  CPT251               }
+	{ rank=same OUA8  ENR102 CPT330        }
+	{ rank=same OUA9  CPT112               }
+	{ rank=same OUA10 ENR114 CPT264 CPT331 }
+	{ rank=same OUA11                      }
+	{ rank=same OUA12 CPT222A CPT310A      }
+	{ rank=same OUA13                      }
+	{ rank=same OUA14 CPT222B              }
+	{ rank=same OUA15 CPT374_A             }
+	{ rank=same OUA16                      }
+	{ rank=same OUA17 ENR208A CPT111       }
+	{ rank=same OUA18 MAT17 CPT310B        }
+	{ rank=same OUA19                      }
+	{ rank=same OUA20 ENR208B              }
+	{ rank=same OUA1337}
+
+	// Study Periodic Dependency Chain
+	{ edge [ arrowhead=ediamond ]
+		OUA0//OUA101
+		-> OUAA -> OUAB -> OUAC -> OUAD -> OUAE -> OUAF
+		-> OUA1 -> OUA2 -> OUA3 -> OUA4 -> OUA5 -> OUA6 -> OUA7 -> OUA8 -> OUA9 -> OUA10 -> OUA11 -> OUA12 -> OUA13 -> OUA14
+		-> OUA15 -> OUA16 -> OUA17 -> OUA18 -> OUA19 -> OUA20 -> OUA1337
+	} { edge [ arrowhead=diamond ]
+	}
+	/* Edge-based Dependencies */
+	{ edge [ color="#000000" style=bold ] // Mandatory
+		CPT121 -> CPT331
+		CPT230 -> CPT331//:nw
+		CPT230 -> CPT330 -> CPT331
+		edge [ weight=100 ]
+		CPT121 -> CPT264
+		edge [ weight=1000 ]
+		ENR101 -> ENR102 -> ENR114 -> ENR208A //-> ENR208B
+		CPT121 -> CPT222A
+	} { edge [ color="#000000" style=dashed arrowhead=empty ] // Recommended
+		//ENR114 -> ENR115 -> ENR208
+			CPT120 -> CPT121 -> {CPT270 CPT220}
+		CPT121 -> CPT230//:ne
+		{CPT110 CPT120} -> CPT140
+		CPT110 -> CPT250
+		{CPT220 /*CPT221*/} -> {CPT323 CPT223}
+		CPT250 -> CPT251
+		CPT121 -> CPT330
+		edge [ weight=100 ]
+		CPT160 -> CPT264
+		edge [ weight=1000 ]
+		CPT110 -> CPT160
+		CPT270 -> CPT374_A
+		CPT230 -> CPT310A
+		CPT120 -> CPT250 -> CPT264
+	} { edge [ arrowhead=normal style=tapered penwidth=6 weight=1337]
+		CPT310A -> CPT310B
+		CPT222A -> CPT222B
+		xCPT110 -> CPT110
+		xCPT120 -> CPT120
+		CPT374_A -> MAT17
+		ENR208A -> ENR208B
+	} { edge [ style=invis ]
+		Legend -> OUA0
+		OUA0 -> OUA
+		CPT112 -> CPT111
+	 /*
+		OUA13 -> ENR208 -> CPT111
+		CPT223 -> CPT230
+		  ENR101 -> CPT160
+	*/
+	}
+
+	// Legendary Key
+	{ rank=float
+		Legend [shape=none, margin=0, label=<
+			<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+			<tr>
+				<td colspan="6"><b>Legends</b></td>
+			</tr>
+			<tr>
+				<td>HD</td>
+				<td>D</td>
+				<td>C</td>
+				<td>P</td>
+				<td>F</td>
+				<td>U</td>
+			</tr>
+			<tr>
+				<td bgcolor="#3399EE">&nbsp;&nbsp;&nbsp;</td>
+				<td bgcolor="#33EE99">&nbsp;&nbsp;&nbsp;</td>
+				<td bgcolor="#EEEE33">&nbsp;&nbsp;&nbsp;</td>
+				<td bgcolor="#EE9933">&nbsp;&nbsp;&nbsp;</td>
+				<td bgcolor="#EE3333">&nbsp;&nbsp;&nbsp;</td>
+				<td bgcolor="#D3D3D3">&nbsp;&nbsp;&nbsp;</td>
+			</tr>
+			</table>
+		>]
+	}
+
+}
