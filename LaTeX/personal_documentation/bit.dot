@@ -41,7 +41,9 @@ digraph "Academic Timeline" {
 		OUA17 [ label="SP2 '18" ]
 		OUA18 [ label="SP3 '18" ]
 		OUA19 [ label="SP4 '18" ]
-		OUA20 [ label="SP3 '19" ]
+		OUA20 [ label="SP1 '19" ]
+		OUA21 [ label="SP2 '19" ]
+		OUA22 [ label="SP3 '19" ]
 	} { node [
 			group=this         shape=diamond
 			fontname=monospace fontcolor="#FFFFFF"
@@ -115,7 +117,7 @@ digraph "Academic Timeline" {
 	{ rank=same OUA17 ENR208A CPT111       }
 	{ rank=same OUA18 MAT17 CPT310B        }
 	{ rank=same OUA19                      }
-	{ rank=same OUA20 ENR208B              }
+	{ rank=same OUA22 ENR208B              }
 	{ rank=same OUA1337}
 
 	// Study Periodic Dependency Chain
@@ -123,7 +125,7 @@ digraph "Academic Timeline" {
 		OUA0//OUA101
 		-> OUAA -> OUAB -> OUAC -> OUAD -> OUAE -> OUAF
 		-> OUA1 -> OUA2 -> OUA3 -> OUA4 -> OUA5 -> OUA6 -> OUA7 -> OUA8 -> OUA9 -> OUA10 -> OUA11 -> OUA12 -> OUA13 -> OUA14
-		-> OUA15 -> OUA16 -> OUA17 -> OUA18 -> OUA19 -> OUA20 -> OUA1337
+		-> OUA15 -> OUA16 -> OUA17 -> OUA18 -> OUA19 -> OUA20 -> OUA21 -> OUA22 -> OUA1337
 	} { edge [ arrowhead=diamond ]
 	}
 	/* Edge-based Dependencies */
