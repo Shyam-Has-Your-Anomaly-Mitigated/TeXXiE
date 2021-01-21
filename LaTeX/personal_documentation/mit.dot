@@ -1,0 +1,108 @@
+//       Temporal Academia
+digraph "Academic Timeline" {
+
+	// Configuration
+	bgcolor=black
+	graph [ splines=ortho nodesep=.4 ]// concentrate=true ]
+
+	// Nodal Groups
+	{ node [ group=metaunsw fontname=monospace fontcolor="#333333" style=filled fillcolor="#999999" color="#FFFFFF" shape=box ]
+		// MIT program 8543
+		uoc48 [ label="48 UOC" ]
+		uoc66 [ label="66 UOC" ]
+		finals [ label="Final Trimester" ]
+		wam70 [ label="70 WAM" ]
+		//OR [ label="∨" ]
+	} { node [ group=unsw fontname=monospace fontcolor="#FFFFFF" style=filled fillcolor="#000000" color="#FFFFFF" shape=box ]
+		comp9021 [ label="COMP9021[1,3] Prg(Py)"]// Principles of Programming (Python)" ]
+		comp9024 [ label="COMP9024[0,3] DSA(C)"]// Data Structures and Algorithms (C)" ]
+		comp9311 [ label="COMP9311[1,3] DBS(SQL)"]// Database Systesm (SQL)" ]
+		comp9331 [ label="COMP9331[1,3] Net"]// Computer Networks and Applications (TCP/IP)" ]
+		comp9814 [ label="COMP9814[0,1] EAI(P,L)"]// Extended Artificial Intelligence (Prolog, Lisp)" ]
+			//comp9414 [ label="COMP9414"]// Artificial Intelligence (Prolog, Lisp)" ]
+		comp9900 [ label="COMP9900[1,3] ITP"]// Information Technology Project (FM,AI,Prolog,Lisp,Hex)" ]
+		gsoe9820 [ label="GSOE9820[1,3]"]// Engineering Project Management (Scrum)" ]
+		comp4418 [ label="COMP4418[3] KRR(P)"]// Knowledge Representation and Reasoning (Prolog, Potassco)" ]
+		comp9417 [ label="COMP9417[1,2] ML+DM(R)"]// Machine Learning and Data Mining (R)" ]
+		comp9844 [ label="COMP9844[2,3]? ENN+DL(Py)"]// Extended Neural Networks and Deep Learning (PyTorch)" ]
+			//comp9444 [ label="COMP9444[2,3] NN+DL(Py)"]// Neural Networks and Deep Learning (PyTorch)" ]
+		comp4161 [ label="COMP4161[3] FM(I/H,C)"]// Advanced Topics in Software Verification (Isabelle/HOL, C, AutoCorres)" ]
+		comp6721 [ label="COMP6721[2] FM(Dy,C)"]// (In-)Formal Methods: The Lost Art (Python, C, Dafny)" ]
+		comp9153 [ label="COMP9153[2] FM(MC)"]// Algorithmic Verification (model checking including SPIN, Skink, and UPPAAL)" ]
+		comp9434 [ label="COMP9434[3] ROS"]// Robotic Software Architecture (ROS, Computer Vision)" ]
+		comp9491 [ label="COMP9491[2] App"]// Applied Artificial Intelligence (Computer Vision)" ]
+		comp9020 [ label="COMP9020[1,3] CS"]// Fundamentals of Computer Science (Discrete Maths)" ]
+	} { node[shape=circle color=white fixedsize=true label="" width=.15]
+		wam70a wam70b comp9020a
+		comp9024c comp9024d comp9024e
+	} { node[shape=point color=white width=.15]
+		z wam70d comp4418a comp9814a comp9417b
+	} { node[shape=point width=0]
+		wam70c comp9417a comp9024a comp9024b comp9024f uoc48a
+	}
+
+	// Rows
+	{rank=same comp9331 comp9024}
+	//{rank=same uoc48 comp4161}
+	//{rank=same wam70 comp9844}
+	{rank=same z comp9900}
+	{rank=same wam70a comp9844 comp9024c}
+	{rank=same wam70b comp9434 comp9024f}
+	{rank=same uoc66 finals wam70c wam70d comp9491}
+	{rank=same comp6721 comp9020a}
+	{rank=same comp9814a comp9814 comp9024e}
+	{rank=same comp4418a comp4418}
+	{rank=same comp9417a comp9417 comp9417b comp9024d}
+	{rank=same comp9024 comp9024a comp9024b}
+	{rank=same wam70 uoc48a comp4161}
+
+	/* Edge-based Dependencies */
+	{ edge [ color="#FFFFFF" style=bold ] // Prerequisite
+		comp9020 -> comp9153 [weight=1337]
+		comp9020 -> comp9024a [tailport=e dir=none]
+			comp9024a -> comp9020a [dir=none weight=1337]
+			comp9020a -> comp9417b [dir=none weight=1337]
+			comp9417 -> comp9417b [dir=back]
+			comp6721 -> comp9020a [dir=back]
+		comp9024 -> comp6721 [weight=1337]
+		//comp9024 -> {comp9417, comp9434, comp9814, comp9844} [ tailport=e headport=e weight=-1337 style=invis]
+			comp9024 -> comp9024a [dir=none]
+			comp9024a -> comp9024b [dir=none]
+			comp9024b -> comp9024c [dir=none weight=1337]
+			comp9844 -> comp9024c [dir=back]
+			comp9024c -> comp9024d [dir=none weight=1337]
+			comp9417b -> comp9024d [dir=none]
+			comp9024d -> comp9024e [dir=none weight=1337]
+			comp9024e -> comp9024f [dir=none weight=1337]
+			comp9434 -> comp9024f [dir=back]
+		uoc48 -> uoc48a [dir=none weight=1337]
+			uoc48a -> comp4161
+		wam70 -> wam70a [dir=none weight=1337]
+			wam70a -> comp9844
+			wam70a -> wam70b [dir=none weight=1337]
+			wam70b -> comp9434
+			wam70b -> wam70c [dir=none weight=1337]
+			wam70c -> wam70d [dir=none]
+			wam70d -> comp9491
+		comp9814 -> comp4418 [weight=1337]
+		comp9814a -> comp9814 [dir=none]
+			comp9814a -> comp4418a [dir=none weight=1337]
+			comp9814 -> comp9024e [dir=back]
+		comp4418a -> comp4418 [dir=none]
+			comp4418a -> wam70d [dir=none weight=1337]
+		comp9417a -> comp9417 [dir=none]
+			comp9417a -> comp9814a [dir=none weight=1337]
+		{uoc66, finals} -> z [dir=none]
+		z -> comp9900
+	} { edge [ color="#FFFFFF" style=dashed arrowtail=empty ] // Corequisite
+		comp9331 -> comp9024 [dir=back]// tailport=e headport=w ]//xlabel="abc" labelfontcolor=white forcelabels=true ]
+	} { edge [ color="#333333" arrowhead=normal style=tapered penwidth=6 tailport=s headport=n weight=1337 ]
+	} { edge [ style=invis tailport=s headport=n weight=1337 ]
+		gsoe9820 -> comp9311 -> comp9021 -> comp9020
+		comp9153 -> comp9024
+		comp6721 -> comp4161 -> comp9844 -> comp9417 -> comp9814
+		comp4418 -> comp9434 -> comp9491 -> comp9900
+		wam70 -> uoc48a
+	}
+
+}

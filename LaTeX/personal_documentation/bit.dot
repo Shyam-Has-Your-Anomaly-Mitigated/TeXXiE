@@ -172,7 +172,7 @@ digraph "Academic Timeline" {
 	*/
 	}
 
-	// Legendary Key
+	// Legendary Key(s)
 	{ rank=float
 		Legend [shape=none, margin=0, label=<
 			<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
